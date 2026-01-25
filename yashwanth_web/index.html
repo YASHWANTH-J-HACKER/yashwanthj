@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yashwanth J | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="social-sidebar">
+       <a href="https://mail.google.com/mail/?view=cm&fs=1&to=yashwanthjrvce@gmail.com" target="_blank" class="social-item">
+    <i class="fas fa-envelope"></i> <span class="platform-name">Gmail</span>
+</a>
+        <a href="https://www.linkedin.com/in/yashwanth-j-852555387/" target="_blank" class="social-item">
+            <i class="fab fa-linkedin-in"></i> <span class="platform-name">LinkedIn</span>
+        </a>
+        <a href="https://github.com/YASHWANTH-J-HACKER" target="_blank" class="social-item">
+            <i class="fab fa-github"></i> <span class="platform-name">GitHub</span>
+        </a>
+        <a href="https://www.hackerrank.com/profile/yashwanthj_ci25" target="_blank" class="social-item">
+            <i class="fab fa-hackerrank"></i> <span class="platform-name">HackerRank</span>
+        </a>
+        <a href="https://leetcode.com/u/the_hacker_yashwanth/" target="_blank" class="social-item">
+            <i class="fas fa-code"></i> <span class="platform-name">LeetCode</span>
+        </a>
+        <a href="https://www.instagram.com/i_am_yashwanth_j/" target="_blank" class="social-item">
+            <i class="fab fa-instagram"></i> <span class="platform-name">Instagram</span>
+        </a>
+    </div>
+
+    <nav class="top-nav">
+        <div class="nav-links">
+            <a href="#home" class="nav-btn active">Home</a>
+            <a href="#education" class="nav-btn">Education</a>
+            <a href="#projects" class="nav-btn">Projects</a>
+            <a href="#quote" class="nav-btn">Thoughts</a>
+            <a href="#connect" class="nav-btn">Connect</a>
+            <a href="resume.pdf" target="_blank" class="nav-resume">Resume</a>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div class="profile-container">
+            <img src="profile.jpg" alt="Yashwanth J" class="main-photo">
+        </div>
+        <h1 class="bulky-name">YASHWANTH J</h1>
+        <p class="tagline">CSE-AIML Student | Tutor | Developer</p>
+        <p class="bio-text">
+            Aspiring <b>AIML Engineer</b> at RV College of Engineering. 
+            Passionate about solving real-world problems through code and I'm a part time <strong>Tutor</strong>, mentoring students to achieve academic excellence.
+        </p>
+    </section>
+    
+    <section id="education">
+        <h2 class="section-title">Academic Achievements</h2>
+        <div class="edu-grid">
+            <div class="edu-card">
+                <h3>RV College of Engineering</h3>
+                <p class="degree">B.E. in CSE (AIML)</p>
+                <div class="score-badge">KCET Rank: <b>749</b></div>
+                <p class="year">2025 - 2029</p>
+                <a href="https://rvce.edu.in" target="_blank" class="visit-btn">Visit College <i class="fas fa-external-link-alt"></i></a>
+            </div>
+
+            <div class="edu-card">
+                <h3>Sri Ranga PU College</h3>
+                <p class="degree">Pre-University (PCMC)</p>
+                <div class="score-badge">Board Score: <b>95.17%</b></div>
+                <p class="year">Class 12</p>
+                <a href="https://www.uniapply.com/school/sri-ranga-pu-college-tdasarahalli-bangalore/" target="_blank" class="visit-btn">Visit Campus <i class="fas fa-external-link-alt"></i></a>
+            </div>
+
+            <div class="edu-card">
+                <h3>Sri Ranga Vidya Nikethan</h3>
+                <p class="degree">Secondary Schooling</p>
+                <div class="score-badge">SSLC Score: <b>99.04%</b></div>
+                <p class="year">Class 10</p>
+                <a href="https://srvngroup.com/" target="_blank" class="visit-btn">Visit School <i class="fas fa-external-link-alt"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-container">
+            
+            <div class="project-box">
+                <h3>Car Compass</h3>
+                <p>Smart parking locator using directional sensors.</p>
+                <button class="btn-action" onclick="openModal('modal-compass')">
+                    <i class="fas fa-images"></i> View Photos
+                </button>
+            </div>
+
+            <div class="project-box">
+                <h3>RFID Attendance</h3>
+                <p>IoT-based automated attendance system.</p>
+                <button class="btn-action" onclick="openModal('modal-rfid')">
+                    <i class="fas fa-images"></i> View Photos
+                </button>
+            </div>
+
+            <div class="project-box">
+                <h3>RVCE GPA Calculator</h3>
+                <p>Java tool for calculating SGPA/CGPA.</p>
+                <a href="https://yashwanth-j-hacker.github.io/RVCE-Gpa-Calculator/" target="_blank" class="btn-action link-btn">
+                    <i class="fas fa-globe"></i> Visit Website
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="quote" class="quote-section">
+        <div class="quote-box">
+            <i class="fas fa-quote-left quote-icon"></i>
+            <p>
+                "Develop self-acceptance first. If you cannot accept yourself, 
+                how can you expect the world to accept you?"
+            </p>
+            <i class="fas fa-quote-right quote-icon"></i>
+            
+            <span>- Yashwanth J</span>
+        </div>
+
+        <div class="footer-socials" id="connect">
+            <p>Connect with me</p>
+            <div class="footer-icons">
+                <a href="mailto:yashwanthjrvce@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/yashwanth-j-852555387/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/YASHWANTH-J-HACKER" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/i_am_yashwanth_j/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="copyright">&copy; 2026 Yashwanth J</p>
+        </div>
+    </section>
+
+    <div id="modal-compass" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-compass')">&times;</span>
+            <h2>Car Compass Gallery</h2>
+            <div class="gallery-grid">
+                <img src="carcompass1.jpg" alt="Compass Circuit">
+                <img src="carcompass2.jpg" alt="Compass Prototype">
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-rfid" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-rfid')">&times;</span>
+            <h2>RFID Gallery</h2>
+            <div class="gallery-grid">
+                <img src="rfid1.jpg" alt="RFID Hardware">
+                <img src="rfid2.jpg" alt="RFID Output">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
