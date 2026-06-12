@@ -310,6 +310,7 @@ section {
 }
 
 /* --- MODALS --- */
+/* --- MODALS --- */
 .modal {
     display: none; 
     position: fixed; 
@@ -319,6 +320,7 @@ section {
     width: 100%; 
     height: 100%; 
     background-color: rgba(0,0,0,0.9); 
+    overflow-y: auto; /* FIX: Enables vertical scrolling when content overflows the screen height */
 }
 
 .modal-content {
@@ -353,7 +355,7 @@ section {
 }
 
 /* ------------------------------------------------ */
-/* MOBILE RESPONSIVE LOGIC             */
+/* MOBILE RESPONSIVE LOGIC                          */
 /* ------------------------------------------------ */
 
 @media (max-width: 768px) {
@@ -417,4 +419,26 @@ section {
     .hero-section { padding-bottom: 80px; }
     .projects-container { padding-bottom: 60px; }
     body { padding-bottom: 60px; }
+
+    /* 5. Fluid Modal Layout Configuration for Mobile Views */
+    .modal-content {
+        width: 95%;
+        margin: 10% auto;
+        padding: 10px;
+    }
+
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 15px;
+    }
+
+    .gallery-grid img {
+        width: 100%;
+        height: auto;          /* Reset fixed height to remove vertical squash */
+        max-height: 250px;     /* Cap height limits on phone layouts */
+        object-fit: contain;   /* Force entire image visibility with no cropping */
+        background: #111;      /* Fill background spacing box neatly */
+        border-radius: 6px;
+    }
 }
